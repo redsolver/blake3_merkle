@@ -13,7 +13,7 @@ pub struct HashDepth {
   pub depth: u8,
 }
 
-pub const BLOCK_CHUNK: u8 = 10;
+pub const BLOCK_CHUNK: u8 = 8;
 // (1<<BLOCK_CHUNK)*CHUNK_LEN = (1<<10) * 1024 = 1MB
 
 #[derive(Debug)]
