@@ -173,7 +173,7 @@ impl Merkle {
 }
 
 impl Write for Merkle {
-  pub fn write(&mut self, buf: &[u8]) -> Result<usize, Error> {
+  fn write(&mut self, buf: &[u8]) -> Result<usize, Error> {
     let len = buf.len();
     let mut pos = self.pos;
     let mut n = self.n;
